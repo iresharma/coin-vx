@@ -1,10 +1,14 @@
+import 'package:coin_vx/Pages/HomeScreen/Home.dart';
 import 'package:flutter/material.dart';
+import 'package:logger/logger.dart';
 import 'package:velocity_x/velocity_x.dart';
+
+var logger = Logger();
 
 void main() {
   /// Setting Path Url Strategy for Web
   Vx.setPathUrlStrategy();
-
+  logger.v("Logger Initialized");
   runApp(CoinApp());
 }
 
@@ -42,16 +46,20 @@ class _CoinAppState extends State<CoinApp> {
             ),
             body: "${uri} was not found".text.center.xl.make(),
           )),
-      routes: {
-        '/': (uri, params) => MaterialPage(
-                child: Scaffold(
-              body: "heelo".text.center.make(),
-            ))
-      });
+      routes: {'/': (uri, params) => MaterialPage(child: Home())});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+        theme: ThemeData(
+            accentColor: Colors.deepPurple,
+            primaryColor: Colors.teal,
+            brightness: Brightness.light),
+        darkTheme: ThemeData(
+            accentColor: Colors.deepPurple,
+            primaryColor: Colors.teal,
+            brightness: Brightness.dark,
+            scaffoldBackgroundColor: Colors.black45),
         routeInformationParser: VxInformationParser(),
         routerDelegate: navigator);
   }
