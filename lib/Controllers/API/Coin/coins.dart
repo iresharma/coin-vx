@@ -22,5 +22,9 @@ abstract class CoinsAPI extends ChopperService {
   }
   @Get(path: '/{coinId}/twitter')
   Future<Response> tweets(@Path() String coinId);
+  @Get(path: '/')
+  Future<Response> getCoins();
+  @Get(path: '/{coinId}')
+  Future<Response> getCoin(@Path() String coinId);
 }
 

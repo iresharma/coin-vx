@@ -2,6 +2,7 @@ import 'package:coin_vx/Controllers/API/Coin/coins.dart';
 import 'package:coin_vx/Controllers/API/Global/global.dart';
 import 'package:coin_vx/Models/global.dart';
 import 'package:coin_vx/Models/tweet.dart';
+import 'package:coin_vx/Pages/HomeScreen/pages/Coins.dart';
 import 'package:coin_vx/Pages/HomeScreen/pages/Screen1.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -109,9 +110,7 @@ class _HomeState extends State<Home> {
                     data: loading ? GlobalData.empty() : data,
                     loading: loading,
                   ),
-                  Center(
-                    child: "Coins".text.make(),
-                  ),
+                  CoinsPage(),
                   Center(
                     child: "Search".text.make(),
                   )

@@ -57,7 +57,7 @@ class TweetPage extends StatelessWidget {
             onPressed: () => print('hi'),
             icon: Icon(LineIcons.twitter),
             label: "Twitter".text.white.lg.make())
-      ].vStack(),
+      ].vStack().scrollVertical(),
     );
   }
 }
