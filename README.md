@@ -1,16 +1,29 @@
 # coin_vx
 
-A new Flutter project.
+An attempt to make a simple app using [VelocityX](https://velocityx.dev), a tailwind and swift inspired flutter framework
 
-## Getting Started
+## ScreenShots
 
-This project is a starting point for a Flutter application.
+> Home Screen
 
-A few resources to get you started if this is your first Flutter project:
+| Light        | Dark           | 
+| ------------- |:-------------:| 
+| ![Light Home](./README_files/Screenshot%202021-06-02%20at%207.02.48%20AM.png) | ![Dark Home](./README_files/Screenshot%202021-06-02%20at%207.01.28%20AM.png) |
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+> Coins List
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Light        | Dark           | 
+| ------------- |:-------------:| 
+| ![Light COins](./README_files/Screenshot%202021-06-02%20at%207.01.51%20AM.png) | ![Dark COins](./README_files/Screenshot%202021-06-02%20at%207.02.37%20AM.png) |
+
+> Tweet Screen
+
+| Light        | Dark           | 
+| ------------- |:-------------:| 
+| ![Light Tweet](./README_files/Screenshot%202021-06-02%20at%207.03.06%20AM.png) | ![Dark COins](./README_files/Screenshot%202021-06-02%20at%207.03.13%20AM.png) |
+
+> Coin Info
+
+| Light        | Dark           | 
+| ------------- |:-------------:| 
+| ![Light COins](./README_files/Screenshot%202021-06-02%20at%207.02.27%20AM.png) | ![Dark COins](./README_files/Screenshot%202021-06-02%20at%207.02.19%20AM.png) |
